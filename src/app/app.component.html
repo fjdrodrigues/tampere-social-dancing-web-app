@@ -1,0 +1,28 @@
+<div class="page-container">
+  <app-navbar></app-navbar> 
+  <main role="main" class="main-container safari_only">
+      <div class="main-row">
+        <div class="col-12 d-md-none mobile-header">
+          <app-mobile-header></app-mobile-header>
+        </div>
+        <div class="col-md-2 d-none d-md-block sidenav">
+          <app-leftpane></app-leftpane>
+        </div>
+      <div class="col-12 col-md-8 text-left main-content">
+        <router-outlet></router-outlet>
+      </div>
+      <div class="col-md-2 d-none d-md-block sidenav">
+        <app-rightpane></app-rightpane>
+      </div>
+      <div class="col-12 d-md-none mobile-footer">
+        <app-mobile-footer></app-mobile-footer>
+      </div>
+    </div>
+  </main>
+  <app-footer></app-footer>
+</div>
+
+
+
+
+

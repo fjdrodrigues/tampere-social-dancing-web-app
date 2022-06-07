@@ -1,0 +1,47 @@
+.content-header {
+
+}
+
+.dance-style-block {
+  margin-top: 1.5rem;
+}
+
+.dance-style-block:not(:last-of-type) {
+  border-bottom: 2px solid #d79922;
+}
+
+.dance-style-name {
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.flag {
+  height: 20px;
+}
+
+.dance-style-video {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: calc((8/12 * 100vw - 10px) * 0.5625);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .dance-style-video {
+    width: 100%;
+    height: calc((100vw - 20px) * 0.5625);
+  }
+}
+
+adk-video.dance-style-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}

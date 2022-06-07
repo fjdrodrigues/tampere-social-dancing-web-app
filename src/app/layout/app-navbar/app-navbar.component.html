@@ -1,0 +1,56 @@
+<nav id="adk-navbar" class="navbar navbar-expand-sm fixed-top adk-navbar">
+  <a class="navbar-brand" routerLink="/" routerLinkActive="active" (click)="isCollapsed = true">
+    
+    <img class="logo"
+      src="https://gist.githubusercontent.com/fjdrodrigues/6930ad15b03e04ba221b321b67c05d20/raw/e4e11c92ebda9855342188c1996179af4b63ad5a/raumasocialdancing.svg">
+  </a>
+  <button class="navbar-toggler navbar-toggler-right"
+          type="button" data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation"
+          (click)="toggleCollapsed()">
+    <div class="navbar-dark">
+      <i class="fas fa-bars adk-navbar-toggler-icon"></i>
+    </div>
+  </button>
+
+  <div class="navbar-collapse collapse text-right" id="navbarToggleExternalContent" [ngbCollapse]="isCollapsed">
+    <ul class="nav navbar-nav ml-auto my-0">
+      <!-- About -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="closeCollapsed()">About</a>
+      </li>
+      <!-- Dance Styles -->
+      <li class="nav-item">
+        <div ngbDropdown #danceDrop="ngbDropdown">
+          <a class="nav-link" id="danceDropdown" ngbDropdownToggle>Dance Styles</a>
+          <div class="dropdown-menu" aria-labelledby="danceDropdown" ngbDropdownMenu #danceMenu>
+            <a class="dropdown-item" routerLink="/dance/cubansalsa" routerLinkActive="active" ngbDropdownItem 
+              (click)="closeDropdown(danceMenu);closeCollapsed()">Cuban Salsa</a>
+            <a class="dropdown-item" routerLink="/dance/bachata" routerLinkActive="active" ngbDropdownItem 
+              (click)="closeDropdown(danceMenu);closeCollapsed()">Bachata</a>
+            <a class="dropdown-item" routerLink="/dance/kizomba" routerLinkActive="active" ngbDropdownItem 
+              (click)="closeDropdown(danceMenu);closeCollapsed()">Kizomba</a>
+            <a class="dropdown-item" routerLink="/dance/others" routerLinkActive="active" ngbDropdownItem 
+              (click)="closeDropdown(danceMenu);closeCollapsed()">Others</a>
+          </div>
+        </div>
+      </li>
+      <!-- Classes -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/classes" routerLinkActive="active" (click)="closeCollapsed()">Classes</a>
+      </li>
+      <!-- Contacts -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contacts" routerLinkActive="active" (click)="closeCollapsed()">Contacts</a>
+      </li>
+      <!-- Change Language -->
+      <li class="nav-item lang">
+        <a class="nav-lang" (click)="setLanguage('en')">en</a>
+        <p class="nav-lang-separator">|</p>
+        <a class="nav-lang" (click)="setLanguage('fi')">fi</a>
+      </li>
+    </ul>
+  </div>
+</nav>

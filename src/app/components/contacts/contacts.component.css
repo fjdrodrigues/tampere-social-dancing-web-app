@@ -1,0 +1,60 @@
+.contact-icon:not(:first-of-type) {
+  margin-left: 5px;
+}
+
+.contact-item {
+  word-break: break-all;
+}
+
+.contact-item:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.phone-block, .whatsapp-group-block .email-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link {
+  text-decoration-line: underline;
+}
+
+.whatsapp-group-block, .email-block, .location-block {
+  margin-top: 2rem;
+}
+
+.location-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icon-address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.address {
+  margin-left: 10px;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-height: 800px) {
+  .map {
+    height: 400px;
+  }
+}
+
+@media (min-height: 900px) {
+  .map {
+    height: 500px;
+  }
+}
