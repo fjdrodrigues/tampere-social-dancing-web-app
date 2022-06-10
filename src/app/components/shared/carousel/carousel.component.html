@@ -17,9 +17,9 @@
       [class.active]="i === selectedIndex"
       itemIndex="{{i}}"
       imgSrc="{{item.url}}"
-      title="{{item.title}}"
+      title="{{item.title | translate}}"
       imgHyperlink="{{item.hyperlink}}"
-      description="{{item.description}}"
+      description="{{item.description | translate}}"
       (touchstart)="swipe($event, 'start')"
       (touchmove)="moveItem($event)"
       (touchend)="swipe($event, 'end')">

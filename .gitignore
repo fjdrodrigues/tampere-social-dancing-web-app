@@ -6,6 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 
+#Angular
+.angular/
 #Angular build
 /frontend
 

@@ -1,11 +1,11 @@
-Amor d' Kizomba - Web App
+Tampere Social Dancing - Web App
 
 # Frontend
 # Install Node JS
 Download & Install
 # Install Angular
  - npm install -g @angular/cli
- - cd ~/amordkizomba
+ - cd ~/tamperesocialdancing
  - run npm install
 
 # Backend
@@ -39,7 +39,7 @@ extension=php_xmlrpc.dll
     AddType application/x-httpd-php .php
     PHPIniDir "C:/php7.1"
 
-# Amordkizomba
+# tamperesocialdancing
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 
@@ -67,10 +67,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-Rauma Social Dance logo:
-Width: 406.03px
-Height: 78.83px
-Colour: #f8f1f1
+Tampere Social Dance logo:
+Width: 180px
+Height: 180px
 
 
 #d79922 - gold

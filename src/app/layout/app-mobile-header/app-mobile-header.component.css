@@ -7,6 +7,6 @@
   margin-right: 3px;
   margin-bottom: 0;
   padding: 1px;
-  border: #d79922;
+  border: var(--contrast-colour);
   border-style: dotted;
 }

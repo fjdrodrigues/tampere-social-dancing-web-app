@@ -3,8 +3,35 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import '~@ng-select/ng-select/themes/material.theme.css';
 
+:root {
+  --main-background-colour: #dde5d4;
+  --contrast-colour: #d79922;
+  --contrast-colour-shadow: #d799226e;
+  --main-text-colour: #31343f;
+  --main-menu-items-colour: #4056a1;
+  --text-shadow-colour: #c5cbe3;
+  --navbar-dropdown-item-active-colour: #4056a166;
+  --adk-table-highlighted-cell-colour: #4056a122;
+  --adk-table-background-colour: #c5cbe366;
+  --logo-size: 15vw;
+  --logo-top-margin: calc(var(--adk-navbar-height) + 0.5rem);
+  --logo-left-margin: calc((16.7% - var(--logo-size))/2);
+  --logo-mobile-top-margin: 0.2rem;
+  --logo-mobile-left-margin: 0.5rem;
+  --adk-navbar-height: 5.5rem;
+}
+/* 
+Background: #efe2ba
+First contrast: #d79922
+Main Text: #31343f
+Menu Items Main: #4056a1
+Text Shadow: #c5cbe3
+Navbar-dropdown-item-active-colour:: #4056a166;
+Adk-table-highlighted-cell-colour: #4056a122;
+Adk-table-background-colour: #c5cbe366
+*/
 a {
-  color: #31343f;
+  color: var(--main-text-colour);
 }
 @media screen and (max-width: 767px) {
   _::-webkit-full-page-media, _:future, :root .safari_only {
@@ -27,12 +54,12 @@ a {
   min-height: inherit;
 }
 .sidenav, .mobile-header {
-	background-color: #efe2ba;
+	background-color: var(--main-background-colour);
 }
 footer {
-  color: #31343f;
-  background-color: #efe2ba;
-  border-top: #d79922;
+  color: var(--main-text-colour);
+  background-color: var(--main-background-colour);
+  border-top: var(--contrast-colour);
 }
 @media (min-width: 768px) {
   .main-content {
@@ -40,58 +67,60 @@ footer {
   }
 }
 .main-container {
-  background-color: #efe2ba;
+  background-color: var(--main-background-colour);
 }
 /* ADK Navbar */
 .adk-navbar {
-  background-color: #efe2ba;
+  background-color: var(--main-background-colour);
 }
 .adk-navbar .navbar-collapse {
-  background-color: #efe2ba;
+  background-color: var(--main-background-colour);
 }
 .adk-navbar .navbar-toggler .adk-navbar-toggler-icon {
-  color: #4056a1;
+  color: var(--main-menu-items-colour);
   font-size: 28px;
 }
 .adk-navbar .navbar-collapse .navbar-nav .nav-link, .adk-navbar .navbar-collapse .navbar-nav .nav-lang {
-  color: #4056a1;
+  color: var(--main-menu-items-colour);
 }
 .adk-navbar .navbar-collapse .navbar-nav .nav-link:hover, .adk-navbar .navbar-collapse .navbar-nav .nav-lang:hover {
-  color: #d79922;
-  text-shadow: 1px 1px 1px #c5cbe3;
+  color: var(--contrast-colour);
+  text-shadow: 1px 1px 1px var(--text-shadow-colour);
 }
 .adk-navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
-  background-color: #c5cbe3;
+  background-color: var(--main-background-colour);
 }
 .adk-navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-  color: #4056a1;
-  text-shadow: 1px 2px 1px #efe2ba;
+  color: var(--main-menu-items-colour);
+  text-shadow: 1px 2px 1px var(--main-background-colour);
 }
 .adk-navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item.active, .dropdown-item:active {
-  background-color: #4056a166;
-  color: #efe2ba;
-  text-shadow: 1px 1px 1px #31343f;
+  background-color: var(--main-background-colour);
+  color: var(--contrast-colour);
 }
 @media (hover: hover) {
   .adk-navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover .nav-link {
-    color: #d79922;
-    text-shadow: 1px 1px 1px #c5cbe3;
+    color: var(--contrast-colour);
+    text-shadow: 1px 1px 1px var(--text-shadow-colour);
   }
   .adk-navbar .navbar-collapse .navbar-nav .nav-item .dropdown:hover .nav-link {
-    color: #d79922;
+    color: var(--contrast-colour);
   }
   .adk-navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
-    background-color: #4056a1;
-    color: #c5cbe3;
-    text-shadow: 1px 2px 1px #31343f;
+    background-color: var(--main-menu-items-colour);
+    color: var(--text-shadow-colour);
+    text-shadow: 1px 2px 1px var(--main-text-colour);
   }
 }
 /* Page Content */
 .page-content {
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .page-content {
@@ -106,8 +135,8 @@ footer {
   font-size: xx-large;
   font-weight: 900;
   text-transform: uppercase;
-  color: #d79922;
-  text-shadow: 1px 1px 2px #c5cbe3;
+  color: var(--contrast-colour);
+  text-shadow: 1px 1px 2px var(--text-shadow-colour);
 }
 .title:not(:first-of-type) {
   margin-top: 2rem;
@@ -123,8 +152,12 @@ footer {
   }
 }
 /* Content */
+.content:first-of-type {
+  margin-top: 2rem;
+}
 .content {
   margin-top: 1rem;
+  align-self: center;
 }
 @media (max-width: 768px) {
   .content {
@@ -154,6 +187,10 @@ footer {
   display:flex;
   align-items:center;
 }
+.adk-table-container .adk-table-top-header, .adk-table-container .adk-table-middle-header,
+  .adk-table-container .adk-table-item.adk-col-2{
+  justify-content: center;
+}
 .adk-table-container .adk-table-content {
   width: 100%;
   flex: 1 0 0;
@@ -178,25 +215,25 @@ footer {
 }
 /* ADK Tables - Colours */
 .adk-table-container {
-  background-color: #c5cbe366;
+  background-color: var(--adk-table-background-colour);
   border-radius: 10px;
-  box-shadow: inset 0px 0px 3px 0px #c5cbe3;
+  box-shadow: inset 0px 0px 3px 0px var(--text-shadow-colour);
 }
 .adk-table-container .adk-table-top-header, .adk-table-container .adk-table-middle-header {
-  border-bottom: 1px solid #efe2ba;
-  background-color: #c5cbe3;
-  color: #4056a1;
+  border-bottom: 1px solid var(--main-background-colour);
+  background-color: var(--text-shadow-colour);
+  color: var(--main-menu-items-colour);
 }
 .adk-table-container .adk-table-top-header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 .adk-table-container .adk-table-item {
-  color: #31343f;
+  color: var(--main-text-colour);
 }
 .adk-table-container .adk-table-item.highlighted-cell {
-  background-color: #4056a122;
-  color: #4056a1 !important;
+  background-color: var(--adk-table-highlighted-cell-colour);
+  color: var(--main-menu-items-colour) !important;
   font-weight: 700;
 }
 /* ADK ng-Select */
@@ -233,14 +270,14 @@ footer {
   font-size: 30px;
 }
 .fa-phone, .fa-envelope, .fa-map-marker-alt {
-  color: #4056a1;
+  color: var(--main-menu-items-colour);
   font-size: 20px;
 }
 .fa-border {
-  border-color: #4056a1 !important;
+  border-color: var(--main-menu-items-colour) !important;
   border-radius: 50% !important;
 }
 /* Contacts */
 .contact-info {
-  color: #31343f;
+  color: var(--main-text-colour);
 }

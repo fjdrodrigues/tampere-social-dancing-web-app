@@ -1,9 +1,9 @@
 .note {
-  margin-top: 1rem;
-  margin-left: 3px;
-  margin-right: 3px;
-  margin-bottom: 0;
+  margin-top: calc(var(--logo-size) + 1.5rem);
   padding: 1px;
-  border: #d79922;
+  border: var(--contrast-colour);
   border-style: dotted;
+  position: fixed;
+  width: 15vw;
+  margin-left: calc((16.66% - var(--logo-size))/2);
 }

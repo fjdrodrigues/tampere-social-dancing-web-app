@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'about',
@@ -6,6 +7,8 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  fabioPicture = environment.fabioPicture;
+  portugueseFlag = environment.portugueseFlag;
 	
   constructor() {
   }

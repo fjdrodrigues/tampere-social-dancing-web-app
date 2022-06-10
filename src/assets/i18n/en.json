@@ -1,5 +1,117 @@
 {
+    "danceStyles": {
+        "cubanSalsa": "Cuban Salsa",
+        "bachata": "Bachata",
+        "kizomba": "Kizomba",
+        "others": "Others"
+    },
+    "navbar": {
+        "items": {
+            "about": "About",
+            "danceStylesHeader": "Dance Styles",
+            "danceStyles": {
+                "others": "Others"
+            },
+            "classes": "Classes",
+            "contacts": "Contacts"
+        }
+    },
+    "rightPane": {
+        "joinWhatsapp": "Join our Whatsapp Group!"
+    },
     "note": {
-        "current": "<b>Note:</b> <br> No classes on Sunday 13.02."
+        "current": "<b>Note:</b> <br> No classes on Saturday 23.07."
+    },
+    "home": {
+        "carousel": {
+            "item1": {
+                "title": "New in Tampere!",
+                "description": "Salsa, Bachata and Kizomba dance classes on Saturdays."
+            },
+            "item2": {
+                "title": "For Beginners and Intermediate Dancers",
+                "description": "Develop your Dancing: Improve your Technique, Leading & Following and Musicality."
+            },
+            "item3": {
+                "title": "Meet NEW People!",
+                "description": "It's going to be a lot of Fun!"
+            }
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "intro": "When Fábio moved from Rauma to Tampere he decided to provide more possibilitites for people to have enjoyable moments while dancing and meeting new people. Thus he started to organise affordable dance classes to existing and new dancers. <br> Our goal is to share the passion for afro-latin dances and music, by organising events and teaching low-cost dance classes.",
+        "teamHeader": "Team",
+        "team": {
+            "element1": {
+                "name": "Fábio Rodrigues",
+                "stylesHeader": "Styles:",
+                "styles": "Kizomba, Semba, Kompa, Tarraxinha, Cuban Salsa, Bachata",
+                "info": "Original from Portugal, Fábio joined social dancing in 2016, when he started to learn Cuban Salsa with Ramon Yudimir Noa Caraballo in Zagreb, Croatia. Since then, he has been learning with many influent teachers in festivals around Europe. Main inspiration comes from Osbanis & Anneta - Deakocan - and from Oliwia Szewczak-Rylska - a very talented teacher based in Warsaw. <br><br> Bachata came along while in Zagreb, in 2017, and he has learned Bachata from some of the top teachers in the world. Though he trained Bachata Sensual as well, his real passion is for Dominican Bachata. <br><br> Though he has been dancing Kizomba since 2010, he didn't attend classes until 2017, when he decided to further develop his skills. He has been learning from the biggest names in the Kizomba scene, and in 2019 completed his first Kizomba and Semba Teacher Training, organised by The Fantastic 4 - Paulo & Lanna and Miguel & Susana. <br><br> He tought Kizomba and Semba in Poland and in Germany, before coming to Finland. <br><br> Between 2020 and 2022 he has been teaching, djing and organising social dance events in Rauma."
+            }
+        }
+    },
+    "dances": {
+        "cubanSalsa" : {
+            "intro": "Cuban Salsa, also known as \"Casino\", is a dance form which originated in Cuba in the second half of the 20th century. It has its roots in the Cuban Son, with influences of Cuban Mambo, Cha Cha Cha, Danzón, Afro-Cuban Rumba and Afro-Cuban Folklore. <br> Contrasting with the North-American Salsa styles (L.A. and N.Y.), which are known as \"Line Salsa\" and danced in a linear fashion, Cuban Salsa is danced in a circular fashion, with complex patterns of arms and body movement. Body and muscle isolations are highly emphasised, with men and women playing strong masculine and feminine roles."
+        },
+        "bachata": {
+            "intro": "Bachata is a dance form which originated in the Dominican Republic in the second half of the 20th century. It has its roots in Bolero and is traditionally danced in a square. <br> Its expansion to the Western civilisation brought influences from Salsa and Ballroom dances, and, consequently, the creation of <b>Modern Bachata</b>, which is danced side to side and involves turning patterns and dips. <br> Eventually, influences from Brazilian Zouk led to the creation of a widely popular dance style, <b>Bachata Sensual</b>, which includes body waves, body isolations and dips.",
+            "galleries": {
+                "dominicanBachata": "<b>Traditional/Dominican Bachata</b>",
+                "modernBachata": "<b>Modern Bachata</b>",
+                "sensualBachata": "<b>Sensual Bachata</b>"
+            }
+        },
+        "kizomba": {
+            "intro": "<b>Kizomba</b> is a word in Kimbundu, an Angolan language, which means \"Party\". Though the word was first attributed to a music style, coined from the influence of Caribbean Zouk music in Angolan <b>Semba</b> music, the adaptation of Semba dance to this new music style gave origin to Kizomba as a dance.<br> Though the origin of the name is undisputed, both the music and the dance have in reality different origins, inside the PALOP (Portuguese-speaking African countries). The dance had been known simply as \"Passada\", which means \"step\" or a pattern of steps. The music in PALOP countries other than Angola was equally influenced by Zouk, giving origin to an umbrella of music, today labeled Kizomba.<br> The Kizomba dance is characterised by a strong connection to the ground, close connection between partners and using smooth body movement to express the music.<br> <b>Tarraxinha</b>, Portuguese word which refers us to \"a screw in a bolt\", is a dance which is danced in the same place, through smooth hip movements, which are in contact with the partner. Originally, this dance was practiced between romantic couples. However, today it became a social form of dance and is often used in beatless parts of the music.<br> The expansion of Kizomba, Semba and Tarraxinha to the Western civilisation, in particular France, where Zouk was already popular, brought influences from electronic music and different dance styles, which led to the creation of a different dance style, today labeled as Urban Kiz.",
+            "galleries": {
+                "kizomba": "<b>Kizomba</b>",
+                "semba": "<b>Semba</b>",
+                "tarraxinha": "<b>Tarraxinha</b>"
+            }
+        },
+        "others": {
+            "title": "Other Dance Styles",
+            "intro": "Other dance styles we practice are:",
+            "merengue": "Merengue - Dominican Republic",
+            "son": "Son - Cuba",
+            "rumba": "Cuban Rumba - Cuba",
+            "orishas": "Afro-Cuban Orishas - Cuba",
+            "afrokuduro": "AfroKuduro - Angola",
+            "funana": "Funana - Cape Verde",
+            "kompa": "Kompa - Haiti"
+        }
+    },
+    "classes": {
+        "schedule": {
+            "title": "Weekly Schedule",
+            "partnerNote": "It is <b>not</b> necessary to bring a partner.",
+            "daysOfTheWeek": {
+                "monday": "Monday",
+                "tuesday": "Tuesday",
+                "wednesday": "Wednesday",
+                "thursday": "Thursday",
+                "friday": "Friday",
+                "saturday": "Saturday",
+                "sunday": "Sunday"
+            },
+            "levels": {
+                "allLevels": "All Levels"
+            }
+        },
+        "prices": {
+            "title": "Prices",
+            "perDay": {
+                "title": "Per Day",
+                "3classes": "3 Classes",
+                "2classes": "2 Classes",
+                "1class": "1 Class"
+            },
+            "paymentTypes": "Payments can be done via Cash, Bank Transfer and Mobile Pay."
+        }
+    },
+    "contacts": {
+        "title": "Contacts"
     }
 }

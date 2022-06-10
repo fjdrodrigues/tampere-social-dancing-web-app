@@ -13,12 +13,13 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
     NgbModule,
     MatCheckboxModule,
-    MatProgressSpinnerModule,
+    MatProgressSpinnerModule
   ],
   exports: [
     FormsModule,
@@ -36,7 +37,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatDatepickerModule,
     MatFormFieldModule,
     MatChipsModule,
-    NgSelectModule
+    NgSelectModule,
+    TranslateModule
   ]
 })
 export class SharedLibsModule {

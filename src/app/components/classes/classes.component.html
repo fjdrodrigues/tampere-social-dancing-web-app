@@ -1,57 +1,33 @@
 
 <div class="page-content">
-  <div class="title">
-    <span>Weekly Schedule</span>
-  </div>
+  <div class="title" [innerHTML]="'classes.schedule.title' | translate"></div>
   <div class="content">
-    <div class="info">
-      <span>It is <b>not</b> necessary to bring a partner.</span>
-    </div>
+    <div class="info" [innerHTML]="'classes.schedule.partnerNote' | translate"></div>
     <div class="class-schedule">
       <div class="adk-table-container all-level-classes">
-        <div class="adk-table-top-header">Monday</div>
+        <div class="adk-table-top-header" [innerHTML]="'classes.schedule.daysOfTheWeek.saturday' | translate"></div>
         <div class="adk-table-content">
-          <div class="adk-table-item">
-            <span>19:00-21:00</span>
+          <div class="adk-table-item adk-col-1">
+            <span>13:00-14:00</span>
           </div>
-          <div class="adk-table-item">
-            <span>Kizomba & Semba</span>
+          <div class="adk-table-item adk-col-2" [innerHTML]="'danceStyles.cubanSalsa' | translate"></div>
+          <div class="adk-table-item adk-col-1">
+            <span>14:00-15:00</span>
           </div>
+          <div class="adk-table-item adk-col-2" [innerHTML]="'danceStyles.bachata' | translate"></div>
+          <div class="adk-table-item adk-col-1">
+            <span>15:00-16:00</span>
+          </div>
+          <div class="adk-table-item adk-col-2" [innerHTML]="'danceStyles.kizomba' | translate"></div>
         </div>
       </div>
-      <div class="adk-table-container">
-        <div class="adk-table-top-header">Friday (Every 2nd Week)</div>
-        <div class="adk-table-content">
-          <div class="adk-table-item">
-            <span>19:00-22:00</span>
-          </div>
-          <div class="adk-table-item">
-            <span>Social Dancing</span>
-          </div>
-        </div>
-      </div>
-      <div class="adk-table-container all-level-classes">
-        <div class="adk-table-top-header">Sunday</div>
-        <div class="adk-table-content">
-          <div class="adk-table-item">
-            <span>18:00-19:30</span>
-          </div>
-          <div class="adk-table-item">
-            <span>Cuban Salsa</span>
-          </div>
-          <div class="adk-table-item">
-            <span>19:30-21:00</span>
-          </div>
-          <div class="adk-table-item">
-            <span>Bachata</span>
-          </div>
-        </div>
-      </div>
+    </div>
     <div class="class-levels">
       <div class="level-indicator">
-        <div class="class-level-box all-level-classes"></div>
-        <div>All Levels</div>
+        <div class="class-level-box all-level-classes" ></div>
+        <div [innerHTML]="'classes.schedule.levels.allLevels' | translate"></div>
       </div>
+      <!--
       <div class="level-indicator">
         <div class="class-level-box beginner-classes"></div>
         <div>Beginners & Improvers</div>
@@ -60,12 +36,11 @@
         <div class="class-level-box intermediate-classes"></div>
         <div>Intermediate</div>
       </div>
+      -->
     </div>
   </div>
 
-  <div class="title">
-    <span>Prices</span>
-  </div>
+  <div class="title" [innerHTML]="'classes.prices.title' | translate"></div>
   <div class="content">
     <div class="prices">
       <div class="adk-table-container">
@@ -115,25 +90,19 @@
             <span>55€</span>
           </div>
         -->
-        <div class="adk-table-top-header">Individual Classes</div>
+        <div class="adk-table-top-header" [innerHTML]="'classes.prices.perDay.title' | translate"></div>
         <div class="adk-table-content">
-          <div class="adk-table-item adk-col-1 highlighted-cell" style="margin-top: 8px;">
-            <span>First Class</span>
-          </div>
-          <div class="adk-table-item adk-col-2 highlighted-cell" style="margin-top: 8px;">
-            <span>FREE</span>
-          </div>
-          <div class="adk-table-item adk-col-1">
-            <span>1 Class (Any Day)</span>
-          </div>
-          <div class="adk-table-item adk-col-2">
-            <span>10€</span>
-          </div>
-          <div class="adk-table-item adk-col-1">
-            <span>2 Classes (Same Day)</span>
-          </div>
+          <div class="adk-table-item adk-col-1" [innerHTML]="'classes.prices.perDay.3classes' | translate"></div>
           <div class="adk-table-item adk-col-2">
             <span>15€</span>
+          </div>
+          <div class="adk-table-item adk-col-1"  [innerHTML]="'classes.prices.perDay.2classes' | translate"></div>
+          <div class="adk-table-item adk-col-2">
+            <span>12€</span>
+          </div>
+          <div class="adk-table-item adk-col-1" [innerHTML]="'classes.prices.perDay.1class' | translate"></div>
+          <div class="adk-table-item adk-col-2">
+            <span>7€</span>
           </div>
           <!--
           <div class="adk-table-middle-header">Packs</div>
@@ -149,7 +118,6 @@
           <div class="adk-table-item adk-col-2">
             <span>90€</span>
           </div>
-          -->
           <div class="adk-table-middle-header">Socials</div>
           <div class="adk-table-item adk-col-1">
             <span>Single Entry</span>
@@ -157,11 +125,10 @@
           <div class="adk-table-item adk-col-2">
             <span>5€</span>
           </div>
+          -->
         </div>
       </div>
     </div>
-    <div class="info">
-      <span>Payments can be done via Cash, Bank Transfer and Mobile Pay.</span>
-    </div>
+    <div class="info" [innerHTML]="'classes.prices.paymentTypes' | translate"></div>
   </div>
 </div>

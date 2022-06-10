@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-mobile-footer',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app-mobile-footer.component.css']
 })
 export class AppMobileFooterComponent {
+  facebookPage = environment.facebookPage;
 
   constructor() {}
 

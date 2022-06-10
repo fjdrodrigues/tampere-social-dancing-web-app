@@ -1,13 +1,12 @@
 <div class="page-content">
-  <div class="title">
-    <span>Other Dance Styles</span>
-  </div>
+  <div class="title" [innerHTML]="'dances.others.title' | translate"></div>
   <div class="content">
-    <span class="content-header">Other dance styles we practice are:</span>
+    <div class="content-header" [innerHTML]="'dances.others.intro' | translate"></div>
     <div class="dance-style-block">
-      <span class="dance-style-name">Merengue - Dominican Republic
-        <img class="flag" src="https://gist.githubusercontent.com/fjdrodrigues/b44ca4fd865f2bb0cc9d6271d607e6b1/raw/9f38beffbcfb5547f10458692fe2e066456c8949/dominican-republic-flag.svg">
-      </span>
+      <div class="dance-style-name">
+        {{ 'dances.others.merengue' | translate }}
+        <img class="flag" src="{{ dominicanFlag }}">
+      </div>
       <div class="dance-style-video">
         <adk-video
           videoIndex="0"
@@ -16,9 +15,10 @@
       </div>
     </div>
     <div class="dance-style-block">
-      <span class="dance-style-name">Son - Cuba
-        <img class="flag" src="https://gist.githubusercontent.com/fjdrodrigues/de17acff197fd9cb5b5c90698e1e3d28/raw/e4a2a2ca4e2a144ce1766492fa140c931c54fed6/cuba-flag.svg">
-      </span>
+      <div class="dance-style-name">
+        {{ 'dances.others.son' | translate }}
+        <img class="flag" src="{{ cubanFlag }}">
+      </div>
       <div class="dance-style-video">
         <adk-video
           videoIndex="1"
@@ -27,9 +27,10 @@
       </div>
     </div>
     <div class="dance-style-block">
-      <span class="dance-style-name">Cuban Rumba - Cuba
-        <img class="flag" src="https://gist.githubusercontent.com/fjdrodrigues/de17acff197fd9cb5b5c90698e1e3d28/raw/e4a2a2ca4e2a144ce1766492fa140c931c54fed6/cuba-flag.svg">
-      </span>
+      <div class="dance-style-name">
+        {{ 'dances.others.rumba' | translate }}
+        <img class="flag" src="{{ cubanFlag }}">
+      </div>
       <div class="dance-style-video">
         <adk-video
           videoIndex="2"
@@ -38,9 +39,10 @@
       </div>
     </div>
     <div class="dance-style-block">
-      <span class="dance-style-name">Afro-Cuban Orishas - Cuba
-        <img class="flag" src="https://gist.githubusercontent.com/fjdrodrigues/de17acff197fd9cb5b5c90698e1e3d28/raw/e4a2a2ca4e2a144ce1766492fa140c931c54fed6/cuba-flag.svg">
-      </span>
+      <div class="dance-style-name">
+        {{ 'dances.others.orishas' | translate }}
+        <img class="flag" src="{{ cubanFlag }}">
+      </div>
       <div class="dance-style-video">
         <adk-video
           videoIndex="3"
@@ -51,9 +53,10 @@
       </div>
     </div>
     <div class="dance-style-block">
-      <span class="dance-style-name">AfroKuduro - Angola
-        <img class="flag" src="https://gist.githubusercontent.com/fjdrodrigues/f60c74284718fa38ceb8877505b68555/raw/5d4d9152a6ef46da014d73d964aae1a3803afdd1/angola-flag.svg">
-      </span>
+      <div class="dance-style-name">
+        {{ 'dances.others.afrokuduro' | translate }}
+        <img class="flag" src="{{ angolanFlag }}">
+      </div>
       <div class="dance-style-video">
         <adk-video
           videoIndex="4"
@@ -62,13 +65,26 @@
       </div>
     </div>
     <div class="dance-style-block">
-      <span class="dance-style-name">Funana - Cape Verde
-        <img class="flag" src="https://gist.githubusercontent.com/fjdrodrigues/5ed1c4c0109b16aed64c6651793ff6b0/raw/010417da6298169c38e4ae1b8411198486734eac/cape-verde-flag.svg">
-      </span>
+      <div class="dance-style-name">
+        {{ 'dances.others.funana' | translate }}
+        <img class="flag" src="{{ capeverdeanFlag }}">
+      </div>
       <div class="dance-style-video">
         <adk-video
           videoIndex="5"
           videoSource="4ZT57ujIHLA">
+        </adk-video>
+      </div>
+    </div>
+    <div class="dance-style-block">
+      <div class="dance-style-name">
+        {{ 'dances.others.kompa' | translate }}
+        <img class="flag" src="{{ haitianFlag }}">
+      </div>
+      <div class="dance-style-video">
+        <adk-video
+          videoIndex="6"
+          videoSource="qradt535Svc">
         </adk-video>
       </div>
     </div>

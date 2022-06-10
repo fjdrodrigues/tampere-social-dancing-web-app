@@ -9,8 +9,8 @@
 .carousel-title, .carousel-description {
   z-index: 11;
   text-align: center;
-  color: #4056a1;
-  background-color: #efe2ba;
+  color: var(--main-menu-items-colour);
+  background-color: var(--main-background-colour);
   padding: 0 0.2rem 0 0.2rem;
   text-decoration: none;
   border-radius: 0.25rem;

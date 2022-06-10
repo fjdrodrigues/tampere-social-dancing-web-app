@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-mobile-header',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app-mobile-header.component.css']
 })
 export class AppMobileHeaderComponent {
+  whatsappGroup = environment.whatsappGroup;
 
   constructor() {}
 

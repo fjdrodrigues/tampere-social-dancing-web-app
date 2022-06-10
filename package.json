@@ -1,5 +1,5 @@
 {
-  "name": "amordkizomba",
+  "name": "tamperesocialdancing",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -24,7 +24,9 @@
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
     "@ng-bootstrap/ng-bootstrap": "^12.1.2",
-    "@ng-select/ng-select": "^6.1.0",
+    "@ng-select/ng-select": "^8.3.0",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.2.0-beta1",
     "hammerjs": "^2.0.8",

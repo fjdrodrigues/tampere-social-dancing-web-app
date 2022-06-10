@@ -1,6 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router, NavigationStart, Scroll } from '@angular/router';
+import { NgbPopoverWindow } from '@ng-bootstrap/ng-bootstrap/popover/popover';
 import { TranslateService } from '@ngx-translate/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +11,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppNavbarComponent implements OnInit {
   public isCollapsed = true;
+  navbarLogo = environment.navbarLogo;
 
   
   constructor(private router: Router,
@@ -26,7 +29,13 @@ export class AppNavbarComponent implements OnInit {
     if(window.scrollY === 0) {
       document.getElementById("adk-navbar").style.boxShadow = "none";
     } else {
-      document.getElementById("adk-navbar").style.boxShadow = "0px 2px 4px 2px #d799226e";
+      document.getElementById("adk-navbar").style.boxShadow = "0px 2px 4px 2px var(--contrast-colour-shadow)";
+    }
+
+    if(window.scrollY > 0 && window.innerWidth < 768) {
+      document.documentElement.style.setProperty('--logo-size', "8vw");
+    } else {
+      document.documentElement.style.setProperty('--logo-size', "15vw");
     }
   }
 
