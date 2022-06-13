@@ -21,12 +21,9 @@
 include_angular_app();
 function include_angular_app() {
         echo "<app-root></app-root>";
-        echo "<script src=\"polyfills-es5.js\" nomodule defer></script>";
-        echo "<script src=\"polyfills-es2015.js\" type=\"module\"></script>";
-        echo "<script src=\"runtime-es2015.js\" type=\"module\"></script>";
-        echo "<script src=\"main-es2015.js\" type=\"module\"></script>";
-        echo "<script src=\"runtime-es5.js\" nomodule defer></script>";
-        echo "<script src=\"main-es5.js\" nomodule defer></script>";
+        echo "<script src=\"polyfills.js\" type=\"module\"></script>";
+        echo "<script src=\"runtime.js\" type=\"module\"></script>";
+        echo "<script src=\"main.js\" type=\"module\"></script>";
 }
 ?>
 </html>
