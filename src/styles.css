@@ -35,6 +35,11 @@
     --adk-navbar-height: 3rem;
   }
 }
+@media (max-height: 290px) {
+  :root {
+    --logo-size: calc(var(--adk-navbar-height) - 0.5rem);
+  }
+}
 /* 
 Background: #efe2ba
 First contrast: #d79922
