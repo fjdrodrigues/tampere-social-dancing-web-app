@@ -40,7 +40,7 @@
   grid-area: bio;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 30px 30px auto;
+  grid-template-rows: 30px min-content auto;
   grid-template-areas: 
     "name"
     "styles"
