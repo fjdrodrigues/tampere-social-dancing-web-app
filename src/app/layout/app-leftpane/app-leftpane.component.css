@@ -7,3 +7,9 @@
   width: 15vw;
   margin-left: calc((1.66%)/2);
 }
+
+@media (max-height: 290px) {
+  .note {
+    margin-top: 1rem;
+  }
+}
