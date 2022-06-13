@@ -32,8 +32,16 @@ export class AppNavbarComponent implements OnInit {
       document.getElementById("adk-navbar").style.boxShadow = "0px 2px 4px 2px var(--contrast-colour-shadow)";
     }
 
-    if(window.scrollY > 0 && window.innerWidth < 768) {
-      document.documentElement.style.setProperty('--logo-size', "8vw");
+    if(window.scrollY > 0 && window.innerWidth < 768  || window.innerHeight < 290) {
+      document.documentElement.style.setProperty('--logo-size', "calc(var(--adk-navbar-height) - 0.5rem)");
+    } else {
+      document.documentElement.style.setProperty('--logo-size', "15vw");
+    }
+  }
+
+  @HostListener('window:resize', ['$event']) onResize(event) {
+    if(window.scrollY > 0 && window.innerWidth < 768 || window.innerHeight < 290) {
+      document.documentElement.style.setProperty('--logo-size', "calc(var(--adk-navbar-height) - 0.5rem)");
     } else {
       document.documentElement.style.setProperty('--logo-size', "15vw");
     }

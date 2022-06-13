@@ -5,5 +5,5 @@
   border-style: dotted;
   position: fixed;
   width: 15vw;
-  margin-left: calc((16.66% - var(--logo-size))/2);
+  margin-left: calc((1.66%)/2);
 }
