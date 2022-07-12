@@ -26,7 +26,7 @@ export const environment = {
   horizontalCarouselItem3: "https://i.ibb.co/nCDCKfG/Collage-3-project-900x425-no-color.png",
 
   whatsappGroup: "https://chat.whatsapp.com/Idmpeq9jF0Y4qcGYWp5tXz",
-  facebookPage: "https://www.facebook.com/Tampere-Social-Dancing-105408835535160",
+  facebookPage: "https://www.facebook.com/tamperesocialdancing",
   phoneNumber: "+358 (0) 40 8542468",
   callPhoneNumber: "tel:+358-0-40-8542468",
   whatsappSendMessage: "https://api.whatsapp.com/send?phone=358408542468",
@@ -37,7 +37,7 @@ export const environment = {
   addressStreetAndNumber: "Pirkankatu 1",
   addressPostalCode: "33230",
   addressCity: "Tampere",
-  googleMapsLink: "https://www.google.com/maps/place/Tampereen+flamencoyhdistys+ry/@61.4976168,23.7441834,15z/data=!4m5!3m4!1s0x0:0x5e44954464d1510e!8m2!3d61.4976454!4d23.7441794"
+  googleMapsLink: "https://maps.google.com/maps?q=Tampereen%20Flamencoyhdistus&t=&z=13&ie=UTF8&iwloc=&output=embed"
 };
 
 /*
