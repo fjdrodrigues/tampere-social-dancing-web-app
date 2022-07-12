@@ -23,7 +23,7 @@ export const environment = {
   horizontalCarouselItem3: "https://i.ibb.co/nCDCKfG/Collage-3-project-900x425-no-color.png",
 
   whatsappGroup: "https://chat.whatsapp.com/Idmpeq9jF0Y4qcGYWp5tXz",
-  facebookPage: "https://www.facebook.com/Tampere-Social-Dancing-105408835535160",
+  facebookPage: "https://www.facebook.com/tamperesocialdancing",
   phoneNumber: "+358 (0) 40 8542468",
   callPhoneNumber: "tel:+358-0-40-8542468",
   whatsappSendMessage: "https://api.whatsapp.com/send?phone=358408542468",
