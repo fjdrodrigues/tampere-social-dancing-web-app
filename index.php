@@ -26,4 +26,13 @@ function include_angular_app() {
         echo "<script src=\"main.js\" type=\"module\"></script>";
 }
 ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDFF3S0ME"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDFF3S0ME');
+</script>
 </html>

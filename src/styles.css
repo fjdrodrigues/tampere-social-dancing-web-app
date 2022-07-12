@@ -11,6 +11,7 @@
   --main-menu-items-colour: #4056a1;
   --text-shadow-colour: #c5cbe3;
   --navbar-dropdown-item-active-colour: #4056a166;
+  --special-highlight-colour: #d40000;
   --adk-table-highlighted-cell-colour: #4056a122;
   --adk-table-background-colour: #c5cbe366;
   --logo-size: 15vw;
@@ -134,7 +135,7 @@ footer {
 }
 /* Page Content */
 .page-content {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 0.5rem;
@@ -185,7 +186,7 @@ footer {
   }
 }
 /* Content Text */
-.content-text {
+.content-text, .intro {
   text-align: justify;
 }
 /* ADK Tables */

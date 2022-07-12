@@ -1,4 +1,11 @@
 {
+    "nextEvent": {
+        "current": "<b>Social Dancing:</b> Saturday, 17/07, 18:00-22:00"
+    },
+    "note": {
+        "current": "<b>Note:</b><br>No classes on Saturday 23.07.",
+        "mobileCurrent": "<b>Note:</b> No classes on Saturday 23.07."
+    },
     "danceStyles": {
         "cubanSalsa": "Cuban Salsa",
         "bachata": "Bachata",
@@ -18,9 +25,6 @@
     },
     "rightPane": {
         "joinWhatsapp": "Join our Whatsapp Group!"
-    },
-    "note": {
-        "current": "<b>Note:</b> <br> No classes on Saturday 23.07."
     },
     "home": {
         "carousel": {

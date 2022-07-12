@@ -1,5 +1,8 @@
-.note {
+.left-pane {
   margin-top: calc(var(--logo-size) + 1.5rem);
+}
+.note {
+  margin-top: 1rem;
   padding: 1px;
   border: var(--contrast-colour);
   border-style: dotted;

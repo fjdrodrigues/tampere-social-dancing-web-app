@@ -2,6 +2,7 @@ export const environment = {
   production: true,
   baseUrl: "http://tamperesocialdancing.fi/",
   api: "http://tamperesocialdancing.fi/api",
+  dbUrl: "tsd-db.cibnmpqdpg0h.eu-north-1.rds.amazonaws.com:3306",
 
   navbarLogo: "https://gist.githubusercontent.com/fjdrodrigues/53da4d1fc55d2399b68df87dbdf34b33/raw/235e284e6d83b364ad745edd193f24251a9daeb1/tamperesocialdancing_nobackground.svg",
 

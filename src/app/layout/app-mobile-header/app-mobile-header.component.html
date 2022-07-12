@@ -1,5 +1,4 @@
-<div class="mobile-header">
-  <div class="column">
+<div class="column mobile-header">
     <div *adkHasAnyRole="'admin'" class="row">
       <adk-admin-selector></adk-admin-selector>
     </div>
@@ -11,7 +10,6 @@
         <span class="contact-item">Join our Whatsapp Group!</span>
       </a>
     </div>
-    <div class="note" [innerHTML]="'note.current' | translate"></div>
+    <div class="note" [innerHTML]="'note.mobileCurrent' | translate"></div>
     <adk-events-comingup></adk-events-comingup>
-  </div>
 </div>

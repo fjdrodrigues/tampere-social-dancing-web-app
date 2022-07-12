@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { AppMobileHeaderComponent } from './app-mobile-header/app-mobile-header.component';
+import { AppTopPaneComponent } from './app-toppane/app-toppane.component';
 import { AppLeftPaneComponent } from './app-leftpane/app-leftpane.component';
 import { AppRightPaneComponent } from './app-rightpane/app-rightpane.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
@@ -32,6 +33,7 @@ import { AppMobileFooterComponent } from './app-mobile-footer/app-mobile-footer.
     ],
     declarations: [
       AppNavbarComponent,
+      AppTopPaneComponent,
       AppMobileHeaderComponent,
       AppMobileFooterComponent,
       AppLeftPaneComponent,
@@ -40,6 +42,7 @@ import { AppMobileFooterComponent } from './app-mobile-footer/app-mobile-footer.
     ],
     exports: [
       AppNavbarComponent,
+      AppTopPaneComponent,
       AppMobileHeaderComponent,
       AppMobileFooterComponent,
       AppLeftPaneComponent,
